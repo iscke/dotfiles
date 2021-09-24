@@ -6,5 +6,6 @@ if status is-interactive
         set -lx TERM xterm-256color
         command ssh $argv
     end
+    set EDITOR nvim
     alias gcfg="git --git-dir=$HOME/.cfg --work-tree=$HOME"
 end
