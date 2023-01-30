@@ -1,0 +1,4 @@
+
+export PATH=/home/elle/bin:$PATH
+
+exec fish
