@@ -1,4 +1,4 @@
 
-export PATH=/home/elle/bin:$PATH
+export PATH=~/bin:$PATH
 
 exec fish
