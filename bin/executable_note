@@ -1,0 +1,10 @@
+#/bin/sh -e
+
+cd ~/notes/
+
+if [ $# -eq 0 ]; then
+    note="$(ls -t | fzf --preview='less {}' --bind shift-up:preview-page-up,shift-down:preview-page-down)"
+    [ ! -z "$note" ] && nvim "$note"
+else
+    nvim "$@"
+fi
